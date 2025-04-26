@@ -164,11 +164,15 @@
   <p>© RAZAFINDRAKOTO Fanomezana Sarobidy Michelle, 2025. All rights reserved.</p>
 </footer>
 <script>
-        // JavaScript pour ouvrir et fermer le menu hamburger
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('active');
-            this.classList.toggle('open');
-        });
+       document.getElementById('hamburger').addEventListener('click', function() {
+    // Cibler le menu (nav ul) et basculer la classe active
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('active');
+    
+    // Bascule également la classe open pour l'animation du hamburger
+    this.classList.toggle('open');
+});
+ 
     </script>
 </body>
 </html>
