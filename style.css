@@ -68,18 +68,30 @@ nav ul li a:hover {
 
 /* Style mobile */
 @media (max-width: 768px) {
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
     /* Masquer le menu horizontal et afficher le hamburger */
     nav ul {
         display: none;
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        background: rgba(0, 0, 0, 0.9);
         width: 100%;
+        margin-top: 60px;
         padding: 10px 0;
     }
 
     #hamburger {
         display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 20px;
+        top: 15px;
     }
 
     /* Lorsque le menu est actif */
