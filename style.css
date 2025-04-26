@@ -61,6 +61,11 @@ nav ul li a:hover {
     background-color: white;
     transition: all 0.3s ease;
 }
+/* Masquer le hamburger sur PC */
+#hamburger {
+    display: none;
+}
+
 /* Style mobile */
 @media (max-width: 768px) {
     /* Masquer le menu horizontal et afficher le hamburger */
